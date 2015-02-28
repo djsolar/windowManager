@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="vertical" 
+    android:layout_width="100dip" 
+    android:layout_height="100dip" 
+    android:background="@drawable/circle"
+    android:layout_gravity="center_horizontal|bottom"
+    > 
+<!-- 定义该组件位于父容器中间 -->  
+<ImageView  
+    android:id="@+id/action_press" 
+    android:layout_width="wrap_content"  
+    android:layout_height="wrap_content"  
+    android:background="@drawable/action_pressed" 
+    android:layout_centerInParent="true" 
+    android:contentDescription="action_press"
+    /> 
+<!-- 定义该组件位于view01组件的上方  与view01左对齐--> 
+<ImageView  
+    android:id="@+id/plus" 
+    android:layout_width="wrap_content"  
+    android:layout_height="wrap_content"  
+    android:src="@drawable/plus_pressed" 
+    android:layout_above="@id/action_press" 
+    android:layout_alignLeft="@id/action_press" 
+    android:padding="5dip" 
+    android:contentDescription="plus"
+    /> 
+<!-- 定义该组件位于view01组件的下方 --> 
+<ImageView  
+    android:id="@+id/minus"   
+    android:layout_width="wrap_content"  
+    android:layout_height="wrap_content"  
+    android:src="@drawable/minus_pressed"  
+    android:layout_below="@id/action_press" 
+    android:layout_alignLeft="@id/action_press" 
+    android:padding="5dip" 
+    android:contentDescription="minus"
+    /> 
+<!-- 定义该组件位于view01组件的左边 --> 
+<ImageView  
+    android:id="@+id/take_camera" 
+    android:layout_width="wrap_content"  
+    android:layout_height="wrap_content"  
+    android:src="@drawable/camera_pressed" 
+    android:layout_toLeftOf="@id/action_press" 
+    android:layout_alignTop="@id/action_press" 
+    android:padding="5dip" 
+    android:contentDescription="take_camera"
+    /> 
+<!-- 定义该组件位于view01组件的右边 --> 
+<ImageView  
+    android:id="@+id/take_video" 
+    android:layout_width="wrap_content"  
+    android:layout_height="wrap_content"  
+    android:src="@drawable/video_pressed" 
+    android:layout_toRightOf="@id/action_press" 
+    android:layout_alignTop="@id/action_press" 
+    android:padding="5dip" 
+     android:contentDescription="take_video"
+    />        
+</RelativeLayout> 
